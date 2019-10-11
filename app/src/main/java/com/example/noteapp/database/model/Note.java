@@ -21,8 +21,7 @@ public class Note {
     }
 
     @Ignore
-    public Note(int id, String title, String content, String time) {
-        this.id = id;
+    public Note( String title, String content, String time) {
         this.title = title;
         this.content = content;
         this.time = time;

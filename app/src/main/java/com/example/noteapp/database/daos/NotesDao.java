@@ -8,7 +8,7 @@ import androidx.room.Update;
 
 import com.example.noteapp.database.model.Note;
 
-import java.util.List;
+import java.util.ArrayList;
 
 @Dao
 public interface NotesDao {
@@ -19,7 +19,7 @@ public interface NotesDao {
     @Update
     Void update(Note note);
     @Query("select * from Note")
-    List<Note> getAllNote();
+    ArrayList <Note> getAllNote();
 
     @Query("select * from Note where id=:id")
     Note searchById(int id);
